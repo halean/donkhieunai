@@ -28,3 +28,4 @@ llama-index-cli
 llama-index-agent-openai
 llama-index-question-gen-openai
 llama-index-program-openai
+uvicorn
