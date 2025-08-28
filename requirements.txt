@@ -1,0 +1,7 @@
+autogen
+torch
+gradio
+scikit-learn
+llama_index*
+docx
+mammoth
