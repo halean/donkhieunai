@@ -1,9 +1,10 @@
 import asyncio
+import os
 
 import openai
 from openai import AsyncOpenAI
 
-openai_token = "sk-r9xsSuSdALD9e8lZqe-KyLSJgB_x19VzIJT4EwEiAdT3BlbkFJd-ox1rphFKtnwSXjYdRv4gdsxH1x3xbTgadqXMzhMA"
+openai_token = os.environ["open_ai_token"]
 # openai.api_base = "https://api.fireworks.ai/inference/v1"
 
 open_ai_client = AsyncOpenAI(api_key=openai_token)
