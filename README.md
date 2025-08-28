@@ -6,4 +6,4 @@ To run:
 6) run: export open_ai_token=<SECRET_TOKEN> (contact for a ready made one)
 7) run: uvicorn main:app --host 0.0.0.0 --port 3000 --loop asyncio (first time: take a few mins to download models, after that: should be faster)
 8) ctrl-click on the link to test out the app
-9) modify code and experiment, have fun!
+9) modify code, restart server (uvicorn) and experiment, have fun!
