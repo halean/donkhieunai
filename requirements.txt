@@ -1,5 +1,4 @@
 autogen
-torch
 gradio
 scikit-learn
 docx
