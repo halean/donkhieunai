@@ -29,3 +29,5 @@ llama-index-agent-openai
 llama-index-question-gen-openai
 llama-index-program-openai
 uvicorn
+python-docx
+transformers==4.45.1

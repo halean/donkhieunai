@@ -253,7 +253,7 @@ def get_all_laws (fn):
     with open(fn) as f:
         return f.read()
 
-all_laws = get_all_laws("/home/ubuntu/various_tools/troly_dontu/all_laws.txt")
+all_laws = get_all_laws("./troly_dontu/all_laws.txt")
 law_index = retriever.index
 async def get_related_regulations(qa):
     
@@ -309,7 +309,7 @@ async def get_related_regulations(qa):
     resulted_articles = []
     for node in retrieved_nodes:
         related_regulations += f"{node.text}\n({node.metadata['citation']})\n-------\n"
-        related_file_path = f"/home/ubuntu/troly_dontu/txts/{node.metadata['citation'].replace('/','')}.txt"
+        related_file_path = f"./txts/{node.metadata['citation'].replace('/','')}.txt"
         if not os.path.exists(related_file_path):
             with open(related_file_path, "w") as f_related:
                 f_related.write(node.text)
